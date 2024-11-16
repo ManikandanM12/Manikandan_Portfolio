@@ -1,4 +1,7 @@
-
+.dark-theme{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
 
 /*Variables*/
 :root{
@@ -8,6 +11,7 @@
 
 /*Colors*/
 :root{
+    --first-color:black;
     --primary-color:rgb(131, 13, 155);
     --secondary-color:rgb(212, 0, 255);
     --gradient-color:linear-gradient(to right,#5001fb,#5001fb)
@@ -93,7 +97,7 @@
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
     width: calc(100%,-2rem);
-    margin-left: var(--mb-2);
+    margin-left: var(--mb-6);
     margin-right: var(--mb-2);
  }
  .header{
@@ -102,9 +106,13 @@
     top:0;
     left:0;
     z-index:var(--z-fixed);
-    background: #fff;
-    box-shadow: 0 1px 1px #b81b1b;
-    background-color: rgb(117, 167, 212);
+    background: #f11010;
+    box-shadow: 0 1px 1px #0278ff;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+
+    
 
  }
  /*NAVBAR*/
@@ -115,6 +123,7 @@
     align-items: center;
     font-weight: var(--font-semi);
  }
+
 @media screen and (max-width: 768px) {
     .nav_menu{
         position: fixed;
@@ -138,7 +147,7 @@ background-color: var(--secondary-color);
 }
 .nav_link{
     position: relative;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     
 
 }
@@ -149,15 +158,18 @@ background-color: var(--secondary-color);
     position: absolute;
     content: '';
     width: 100%;
-    height: 0.3rem;
+    height: 0.2rem;
     left: 0;
-    top: 1.6rem;
-    background-color: #b81b1b;
+    top: 1.3rem;
+    border-radius: 20px;
+    background-color:    #006eff;
+;
  
 }
 
 .nav_logo{
-    color: var(--secondary-color);
+    /* color: var(--first-color); */
+    color: #006eff;
 
 }
 .nav_icon{
@@ -205,9 +217,31 @@ background-color: var(--secondary-color);
     font-size:1.5rem;
     margin-bottom: var(--mb-1);
 }
-.home_title_color{
-    color: var(--primary-color);
+.home_title{
+ color: var(--first-color)   ;
 }
+.home_title_color{
+    
+
+        font-size: 3em;font-weight: 700;
+        font-size: 1em;
+            background: linear-gradient(to right,rgb(255, 0, 200),blue,rgb(255, 0, 255),rgb(255, 12, 53),blue);
+            background-clip: text;
+            background-size: 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation:design_anim 5s infinite linear;
+        
+          
+        
+     
+}
+@keyframes design_anim{
+   
+    to{
+      background-position: 200%;
+    }}
+
 .home_social{
     display: flex;
     flex-direction: column;
@@ -217,6 +251,30 @@ background-color: var(--secondary-color);
     width: max-content;
     margin-bottom: var(--mb-2);
     font-size: 1.5rem;
+}
+.fa-linkedin{
+    color: #0278ff;
+}
+.fa-github{
+    color: rgba(0, 0, 0, 0.795);
+}
+.fa-instagram{
+    color: rgb(233, 40, 104);
+}
+.fa-twitter{
+    color: rgb(0, 68, 255);
+}
+.fa-linkedin:hover{
+    color: #025bff;
+}
+.fa-github:hover{
+    color: rgb(0, 0, 0);
+}
+.fa-instagram:hover{
+    color: rgb(247, 0, 82);
+}
+.fa-twitter:hover{
+    color: rgb(0, 57, 212);
 }
 .home_image{
     position: absolute;
@@ -231,7 +289,7 @@ background-color: var(--secondary-color);
 .button{
     display: inline-block;
     font-size: 0.9rem;
-    background: linear-gradient(to right,rgb(93, 129, 206),rgb(226, 105, 210));
+    background: linear-gradient(to right,rgb(0, 59, 191),rgb(255, 0, 171));
     padding: 3px;
     border-radius: 10px;
     color: rgb(37, 38, 39);
@@ -239,6 +297,7 @@ background-color: var(--secondary-color);
 .button:hover{
     box-shadow: 0 1px 20px rgb(255, 0, 171);
     background: linear-gradient(to right,rgb(0, 59, 191),rgb(255, 0, 171));
+    padding:22px ;
 }
 /*ABOUT*/
 .about{
