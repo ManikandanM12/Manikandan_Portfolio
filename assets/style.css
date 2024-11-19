@@ -96,10 +96,11 @@
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
+   
     width: calc(100%,-2rem);
-    margin-left: var(--mb-6);
-    margin-right: var(--mb-2);
- }
+  
+    
+ } 
  .header{
     width: 100%;
     position:fixed;
@@ -137,6 +138,9 @@
 background-color: var(--secondary-color);
         padding:2rem;
     }
+ .work_img{
+    height: 300px;
+ }
     
 }
 
@@ -199,14 +203,13 @@ background-color: var(--secondary-color);
 }
 
 /*HOME*/
-.main{
-    margin-left:-55px;
-}
+
 
 .home{
 
-    height: calc(100vh-3rem);
-    row-gap: 1rem;
+    height: calc(100vh-10rem);
+    row-gap: 2rem;
+    
     
 }
 .home_data{
@@ -299,6 +302,12 @@ background-color: var(--secondary-color);
     background: linear-gradient(to right,rgb(0, 59, 191),rgb(255, 0, 171));
     padding:22px ;
 }
+.home{
+position: relative;
+   
+   
+
+}
 /*ABOUT*/
 .about{
     margin-top: 3rem;
@@ -389,16 +398,16 @@ background-color: var(--secondary-color);
 .work{
     text-align: center;
 }
-.work_container{
-    row-gap: 2rem;
-}
+
 .work_img{
-    box-shadow: 0 2px 25px blue
-    ;
+    box-shadow: 0 2px 25px blue ;
+   margin-top: 90px;
     border-radius: 10px;
     overflow: hidden;
 }
 .work_img img{
+height:450px;
+    width: 100%;
     transition:1s;
     cursor: pointer;
 }
@@ -419,26 +428,32 @@ background-color: var(--secondary-color);
 .control_button{
     border: none;
     outline: none;
-    margin-left: 90%;
+    padding: 10px;
+    margin-left: 83%;
     font-size: var(--normal-font-size);
     cursor: pointer;
+}
+.input_textarea{
+    height: 100px;
 }
 
 /*Footer*/
 .footer{
-    background-color: var(--secondary-color);
-    color: aqua;
+    background-color:rgb(0, 102, 255);
+    color: rgb(10, 10, 10);
     text-align: center;
     padding: 1rem;
+    width: 100%;
+    margin-top: 50px;
 
 }
 .footer_title{
 font-size: 2rem;
-margin-bottom: var(--mb-4);
+margin-bottom: var(--mb-2);
 
 }
 .footer_socials{
-    margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-2);
 }
 .footer_icon{
     margin: 0 var(--mb-2);
@@ -525,7 +540,7 @@ padding: 10px;
     .home_image{
         width: 460px;
         bottom: 100px;
-        margin-right: 200px
+        /* margin-right: 200px */
     }
     .home_img svg{
         width: 100%;
