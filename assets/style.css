@@ -148,6 +148,12 @@ border-top-left-radius: 10px;
       
  
     }
+    .control_button1{
+      
+        padding: 900px;
+      
+      
+    }
     .nav_menu{
         background-color: #4797ff;
         
@@ -162,7 +168,7 @@ border-top-left-radius: 10px;
     
   
 .home{ 
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
  .work_img{
@@ -429,7 +435,8 @@ position: relative;
     color: #038af8;
 }
 .skills_name .fa-square-js{
-    color: #d9ff00;
+    color: #f1ff33;
+ 
 }
 .skills_name .fa-bootstrap{
     color: #bc10f1;
@@ -447,11 +454,11 @@ position: relative;
     width: 60%;
 }
 .skill_percentage{
-display: flex;
+/* display: flex;
 align-items: center;
-justify-content: center;
+justify-content: center; */
 bottom: 15%;
-left: 90% ;
+left: 85% ;
 position: absolute;
 color: #025bff;
 }
@@ -462,7 +469,7 @@ color: #025bff;
 }
 
 .work_img{
-    box-shadow: 0 2px 25px blue ;
+    box-shadow: 0 2px 25px rgb(0, 102, 255) ;
    margin-top: 90px;
     border-radius: 10px;
     overflow: hidden;
@@ -526,9 +533,36 @@ margin-bottom: var(--mb-2);
 }
 
 @media screen and (min-width: 768px) {
-   .home_title{
+    .footer_title{
+        font-size: 2rem;
+        margin-bottom: var(--mb-2);
+        
+        }
+        .footer_socials{
+            margin-bottom: var(--mb-2);
+        }
+        .footer_icon{
+            margin: 0 var(--mb-2);
+        }
+  
+  
+    .home_title{
     font-size: 3rem;
    }
+   .work_img{
+    box-shadow: 0 2px 25px rgb(0, 102, 255) ;
+   margin-top: 90px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+}
+   .work_img img{
+    height:400px;
+        width: 100%;
+        transition:1s;
+        cursor: pointer;
+    }
+  
    .button{
     margin-top: 30px;
     padding: 20px;
