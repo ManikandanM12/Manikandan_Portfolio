@@ -6,7 +6,9 @@
        
    }
 }
-
+body{
+    overflow-x: hidden;
+}
 /*Variables*/
 :root{
     --header-height:3rem;
@@ -442,7 +444,7 @@ position: relative;
     color: #bc10f1;
 }
 .skill_html{
-    width: 95%;
+    width: 85%;
 }
 .skill_css{
     width: 80%;
@@ -451,7 +453,7 @@ position: relative;
     width: 40%;
 }
 .skill_bootstrap{
-    width: 60%;
+    width: 40%;
 }
 .skill_percentage{
 /* display: flex;
