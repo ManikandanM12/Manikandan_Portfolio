@@ -163,7 +163,9 @@ img {
 
 
     }
-   
+   .nav{
+    max-width: 100%;
+   }
 
     .control_button1 {
 
@@ -669,9 +671,9 @@ justify-content: center; */
     .nav_icon {
         display: none;
     }
-    .nav_icon .fa-bars{
+    /* .nav_icon .fa-bars{
         margin-right: 50px;
-    }
+    } */
     .section_title {
         font-size: 2rem;
     }
