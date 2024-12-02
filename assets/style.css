@@ -163,9 +163,7 @@ img {
 
 
     }
-    .nav{
-        width: 600px;
-    }
+   
 
     .control_button1 {
 
@@ -554,6 +552,7 @@ justify-content: center; */
 
 .work_img img:hover {
     transform: scale(1.1);
+    transform-origin: top;
 }
 
 /*CONTACT*/
