@@ -799,3 +799,16 @@ justify-content: center; */
         right: 10%;
     }
 }
+@media screen and (max-width: 768px){
+
+    .about{
+        margin-top: 10rem;
+    }
+    .home{
+        height: 450px;
+     
+    }
+    .home_social{
+        top: 50%;
+    }
+}
