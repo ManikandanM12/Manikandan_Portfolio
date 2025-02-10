@@ -7,6 +7,9 @@
 
     }
 }
+.light-theme{
+    background-color: white;
+}
 
 body {
     overflow-x: hidden;
@@ -515,8 +518,11 @@ img {
 }
 
 .skills_name .fa-square-js {
-    color: #f1ff33;
+    color: #f0cc00;
 
+}
+.fa-react{
+    color: rgb(0, 162, 255);
 }
 
 .skills_name .fa-bootstrap {
@@ -532,7 +538,10 @@ img {
 }
 
 .skill_javaScript {
-    width: 40%;
+    width: 70%;
+}
+.skills_react{
+    width:65%;
 }
 
 .skill_bootstrap {

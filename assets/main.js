@@ -25,9 +25,8 @@ function linkAction() {
 navlink.forEach((active) => active.addEventListener("click", linkAction));
 
 function darkTheme() {
-  document.body.classList.add("dark-theme");
+  document.body.classList.toggle("dark-theme");
+
+
 }
 
-function lightTheme() {
-  document.body.classList.remove("dark-theme");
-}
